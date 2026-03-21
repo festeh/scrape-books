@@ -1,0 +1,14 @@
+[project]
+name = "scrape-books"
+version = "0.1.0"
+description = "Scrape books from knigi-janzen.de"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx",
+    "beautifulsoup4",
+    "lxml",
+    "pydantic",
+]
+
+[project.scripts]
+scrape-books = "scrape_books.scraper:main"
